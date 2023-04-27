@@ -11,12 +11,17 @@ def menuPrincipal():
     opcao = float(input("\n1 - Pedidos.\n2 - Estabelecimento.\n3 - Área de risco .\n4 - Problemas com a máquina Gertec.\n5 - Sair do atendimento.\n\nOpção: "))
     if opcao == 1:
         escolhaUm()
-    elif opcao == 2:
-        print('Outras opções')
+
+    if opcao == 4:
+        escolhaquatro()
+    if opcao == 5:
+        print('\nO IFOOD agradece, o contato Boas entregas\n')
+    #elif opcao == 2:
+        #print('Outras opções')
 
 # Verificar se o nome tem entre 4 e 8 caracteres. 
 def checarNome(nome):
-   if len(nome) <= 4 or len(nome) >= 8:
+   if len(nome) <= 4 or len(nome) >= 12:
       print("Digite um nome entre 4 e 8 caracteres.")
       menuPrincipal() 
 
@@ -87,6 +92,42 @@ def escolhaUm():
                 print("iFood agradece o contato. Até a próxima!")
              elif(desejaSair == 'sim'):
                 menuPrincipal()
+
+                
+
+# opcao do menu principal 4 4 - Problema com a máquina Gertec: sub menu 1 e 2             
+def escolhaquatro():
+        print('\nProblema com a máquina Gertec: ')
+        opcao = float(input('\n1 - Máquina não lê o cartão : .\n2 - Maquina não liga .\n3 - Máquina está com erro na tela: .\n4 - Voltar ao menu principal. \n\nOpção: '))
+        if opcao == 1:
+            print('\nMáquina não lê o cartão?\n')
+            problema_maquina = input("1 - Desligue ela por 30 segundos, e depois ligue de volta e aperte a função #9, funcionou? digite 'sim ou nao': ")
+             
+            if problema_maquina == 'sim':
+                problema_maquina = print("\nO IFOOD agradece o contato e até a próxima\n") 
+
+            if problema_maquina == 'nao':
+                print("Aguarde um momento, estamostransferindo pra o suporte técnico. \n")
+                print('Obrigado, o IFOOD agradece, Boas entregas\n')
+        if opcao == 2:
+                print("\nMaquina não liga?\n")
+                problema_maquina_2 = input("Verificou a bateria digite 'sim ou nao'? ")
+                print('\nFaça isso, depois volte aqui no canal. ')
+                problema_maquina_2 == input('\nfunciono? ')
+                if problema_maquina_2 == 'sim':
+                    print('\nO IFOOD agradece , Boas entregas.. ')
+                              
+                if problema_maquina_2 == 'nao':
+                    print('\nDevolva o pedido no estabelecimento e informe o nome do funcionario')
+                    input('\nNome do funcionario: ')
+                    print('\nO IFOOD agradece, Voce recebera o valor da corrida em ate 5 dias uteis, Boas entregas. ')
+
+
+        
+             
+
+        if opcao == 4:
+             menuPrincipal()
 
 
 # Chamar função principal
