@@ -1,13 +1,17 @@
 # Boas vindas
 print('Olá você esta no chat do ifood')
 
-# para digitar o nome
-nome = input('Digite seu nome: ')
-
-opcao = 0
+# Verificar se o nome tem entre 4 e 8 caracteres.
+def checarNome(nome):
+   if len(nome) <= 4 or len(nome) >= 8:
+      print("Digite um nome entre 4 e 8 caracteres.")
+      menuPrincipal()
 
 # Menu pricipal
+opcao = 0
 def menuPrincipal():
+    nome = input('Digite seu nome: ')
+    checarNome(nome)
     print('Menu pricipal:')
     print(f'\n{nome}, Digite o numero de uma opção desejada:\n')
     opcao = float(input("\n1 - Pedidos.\n2 - Estabelecimento.\n3 - Área de risco .\n4 - Problemas com a máquina Gertec.\n5 - Sair do atendimento.\n\nOpção: "))
@@ -16,7 +20,7 @@ def menuPrincipal():
     elif opcao == 2:
         print('Outras opções')
 
-
+# Primeira escolha do menu
 def escolhaUm():
         print('\nPedidos: ')
         opcao = float(input("\n1 - Pedido já foi coletado .\n2 - Cliente alega que o pedido não foi entregue .\n3 - Pedido cancelado na tela .\n4 - Retorna ao menu principal \n\nOpção: "))
@@ -85,8 +89,6 @@ def escolhaUm():
                 menuPrincipal()
 
 
+# Chamar função principal
 menuPrincipal()
-
-
-
 
