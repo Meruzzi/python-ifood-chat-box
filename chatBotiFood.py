@@ -102,18 +102,25 @@ def escolhaquatro():
         if opcao == 1:
             print('\nMáquina não lê o cartão?\n')
             problema_maquina = input("1 - Desligue ela por 30 segundos, e depois ligue de volta e aperte a função #9, funcionou? digite 'sim ou nao': ")
-             
-            if problema_maquina == 'sim':
-                problema_maquina = print("\nO IFOOD agradece o contato e até a próxima\n") 
+            
+            # foi colocado o while caso a resposta for diferente de sim ou nao ele pede pra digitar sim ou nao
+            problema_maquina == 'sim' or 'nao'
+            while   (problema_maquina  != 'sim') or (problema_maquina  != 'nao'):
+                problema_maquina = input("\nComando invalido a maquina funcionou? digite 'sim ou nao':")
+                           
+                if problema_maquina == 'sim':
+                    problema_maquina = print("\nO IFOOD agradece o contato e até a próxima\n") 
+                    break
+                if problema_maquina == 'nao':
+                    print("\nAguarde um momento, estamos transferindo para o suporte técnico. ")
+                    print('\nObrigado, o IFOOD agradece, Boas entregas')
+                    break
 
-            if problema_maquina == 'nao':
-                print("Aguarde um momento, estamostransferindo pra o suporte técnico. \n")
-                print('Obrigado, o IFOOD agradece, Boas entregas\n')
         if opcao == 2:
                 print("\nMaquina não liga?\n")
                 problema_maquina_2 = input("Verificou a bateria digite 'sim ou nao'? ")
                 print('\nFaça isso, depois volte aqui no canal. ')
-                problema_maquina_2 == input('\nfunciono? ')
+                problema_maquina_2 == input("\nfunciono? digite 'sim' ou 'nao': ")
                 if problema_maquina_2 == 'sim':
                     print('\nO IFOOD agradece , Boas entregas.. ')
                               
