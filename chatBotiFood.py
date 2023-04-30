@@ -11,7 +11,8 @@ def menuPrincipal():
     opcao = float(input("\n1 - Pedidos.\n2 - Estabelecimento.\n3 - Área de risco .\n4 - Problemas com a máquina Gertec.\n5 - Sair do atendimento.\n\nOpção: "))
     if opcao == 1:
         escolhaUm()
-
+    if opcao == 2:
+        escolhadois()
     if opcao == 4:
         escolhaquatro()
     if opcao == 5:
@@ -92,6 +93,39 @@ def escolhaUm():
                 print("iFood agradece o contato. Até a próxima!")
              elif(desejaSair == 'sim'):
                 menuPrincipal()
+
+def escolhadois():
+        print('\n2 - Estabelecinemto:')
+        opcao = float(input("\n1 - Estabelecimento fechado,nao consigo escanear o qrcode no estabelecimento .\n2 - Estabecimento fechado .\n3 - Pedido cancelado na tela .\n4 - Retorna ao menu principal \n\nOpção: "))
+        if opcao==1:
+
+             Atendimento_Ifood=input("Tira uma foto")
+             print("\nEstamos realocando sua corrida, a taxa de relocação.Estará disponível em até 2 dias úteis.")
+
+
+             print("\nO IFOOD agradece o contato. Até a próxima!")
+
+
+
+        if opcao==2:
+
+             Atendimento_Ifood=input("Tira uma foto")
+             print("\nEstamos realocando sua corrida, a taxa de relocação.Estará disponível em até 2 dias úteis.")
+
+
+             print("\nO IFOOD agradece o contato. Até a próxima!")
+
+
+        if opcao==3:
+             
+             entregador_Ifood=input("Nome do Funcionario")        
+             print("\nEstamos realocandosua corrida, ataxa de relocação.Estará disponívelem até 2 dias úteis.")
+             
+             print("\nO IFOOD agradece o contato. Até a próxima!")
+
+        if opcao == 4:
+             menuPrincipal()  
+
 
                 
 
