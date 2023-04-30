@@ -20,10 +20,10 @@ def menuPrincipal():
     #elif opcao == 2:
         #print('Outras opções')
 
-# Verificar se o nome tem entre 4 e 8 caracteres. 
+# Verificar se o nome tem entre 3 e 14 caracteres. 
 def checarNome(nome):
-   if len(nome) <= 4 or len(nome) >= 12:
-      print("Digite um nome entre 4 e 8 caracteres.")
+   if len(nome) <= 2 or len(nome) >= 15:
+      print("Digite um nome entre 3 e 14 caracteres.")
       menuPrincipal() 
 
 # Primeira escolha do menu
@@ -130,7 +130,7 @@ def escolhadois():
 
                 
 
-# opcao do menu principal 4 4 - Problema com a máquina Gertec: sub menu 1 e 2             
+# opcao do menu principal escolhaquatro,  4 - Problema com a máquina Gertec: submenu  opcao == 1 e opcao == 2             
 def escolhaquatro():
         print('\nProblema com a máquina Gertec: ')
         opcao = float(input('\n1 - Máquina não lê o cartão : .\n2 - Maquina não liga .\n3 - Máquina está com erro na tela: .\n4 - Voltar ao menu principal. \n\nOpção: '))
@@ -152,24 +152,26 @@ def escolhaquatro():
                     break
 
         if opcao == 2:
-                print("\nMaquina não liga?\n")
-                problema_maquina_2 = input("Verificou a bateria digite 'sim ou nao'? ")
-                print('\nFaça isso, depois volte aqui no canal. ')
-                problema_maquina_2 == input("\nfunciono? digite 'sim' ou 'nao': ")
+            print("\nMaquina não liga?\n")
+            print('\nVerificou a bateria, faça isso, depois volte aqui no canal. ')
+                                
+            problema_maquina_2 = input("\nfunciono? digite 'sim' ou 'nao': ")
+            # foi colocado o while caso a resposta for diferente de sim ou nao ele pede pra digitar sim ou nao
+            problema_maquina_2 == 'sim' or 'nao'
+            while  (problema_maquina_2  != 'sim') or (problema_maquina_2  != 'nao'):
+                problema_maquina_2 = input("\nComando invalido a maquina funcionou? digite 'sim ou 'nao' :")
+
                 if problema_maquina_2 == 'sim':
                     print('\nO IFOOD agradece , Boas entregas.. ')
-                              
+                    break         
                 if problema_maquina_2 == 'nao':
                     print('\nDevolva o pedido no estabelecimento e informe o nome do funcionario')
                     input('\nNome do funcionario: ')
                     print('\nO IFOOD agradece, Voce recebera o valor da corrida em ate 5 dias uteis, Boas entregas. ')
-
-
-        
-             
-
+                    break
+          
         if opcao == 4:
-             menuPrincipal()
+            menuPrincipal()
 
 
 # Chamar função principal
