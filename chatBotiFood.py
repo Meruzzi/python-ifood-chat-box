@@ -93,7 +93,8 @@ def escolhaUm():
                 print("iFood agradece o contato. Até a próxima!")
              elif(desejaSair == 'sim'):
                 menuPrincipal()
-
+                
+# Escolha dois do menu principal Estabelecimento
 def escolhadois():
         print('\n2 - Estabelecinemto:')
         opcao = float(input("\n1 - Estabelecimento fechado,nao consigo escanear o qrcode no estabelecimento .\n2 - Estabecimento fechado .\n3 - Pedido cancelado na tela .\n4 - Retorna ao menu principal \n\nOpção: "))
