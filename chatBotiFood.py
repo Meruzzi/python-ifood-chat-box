@@ -156,7 +156,7 @@ def escolhaquatro():
             print('\nVerificou a bateria, faça isso, depois volte aqui no canal. ')
                                 
             problema_maquina_2 = input("\nfunciono? digite 'sim' ou 'nao': ")
-            # foi colocado o while caso a resposta for diferente de sim ou nao ele pede pra digitar sim ou nao
+            # foi colocado o while caso a resposta for diferente de sim ou nao ele pede pra digitar sim ou nao           
             problema_maquina_2 == 'sim' or 'nao'
             while  (problema_maquina_2  != 'sim') or (problema_maquina_2  != 'nao'):
                 problema_maquina_2 = input("\nComando invalido a maquina funcionou? digite 'sim ou 'nao' :")
