@@ -8,6 +8,7 @@ def menuPrincipal():
     checarNome(nome)
     print('Menu pricipal:')
     print(f'\n{nome}, digite o numero de uma opção desejada:\n')
+ 
     opcao = float(input("\n1 - Pedidos.\n2 - Estabelecimento.\n3 - Área de risco .\n4 - Problemas com a máquina Gertec.\n5 - Sair do atendimento.\n\nOpção: "))
     if opcao == 1:
         escolhaUm()
@@ -136,42 +137,41 @@ def escolhaquatro():
         opcao = float(input('\n1 - Máquina não lê o cartão : .\n2 - Maquina não liga .\n3 - Máquina está com erro na tela: .\n4 - Voltar ao menu principal. \n\nOpção: '))
         if opcao == 1:
             print('\nMáquina não lê o cartão?\n')
-            problema_maquina = input("1 - Desligue ela por 30 segundos, e depois ligue de volta e aperte a função #9, funcionou? digite 'sim ou nao': ")
-            
-            # foi colocado o while caso a resposta for diferente de sim ou nao ele pede pra digitar sim ou nao
-            problema_maquina == 'sim' or 'nao'
-            while   (problema_maquina  != 'sim') or (problema_maquina  != 'nao'):
-                problema_maquina = input("\nComando invalido a maquina funcionou? digite 'sim ou nao':")
-                           
-                if problema_maquina == 'sim':
-                    problema_maquina = print("\nO IFOOD agradece o contato e até a próxima\n") 
-                    break
-                if problema_maquina == 'nao':
-                    print("\nAguarde um momento, estamos transferindo para o suporte técnico. ")
-                    print('\nObrigado, o IFOOD agradece, Boas entregas')
-                    break
+            problema_maquina = input("1 - Desligue ela por 30 segundos, e depois ligue de volta e aperte a função #9, funcionou? digite 'sim' ou 'nao': ")
+           
+                                    
+            if problema_maquina == 'sim':
+                problema_maquina = print("\nO IFOOD agradece o contato e até a próxima\n") 
+                
+            if problema_maquina == 'nao':
+                print("\nAguarde um momento, estamos transferindo para o suporte técnico. ")
+                print('\nObrigado, o IFOOD agradece, Boas entregas')
+                
 
         if opcao == 2:
             print("\nMaquina não liga?\n")
             print('\nVerificou a bateria, faça isso, depois volte aqui no canal. ')
                                 
             problema_maquina_2 = input("\nfunciono? digite 'sim' ou 'nao': ")
-            # foi colocado o while caso a resposta for diferente de sim ou nao ele pede pra digitar sim ou nao           
-            problema_maquina_2 == 'sim' or 'nao'
-            while  (problema_maquina_2  != 'sim') or (problema_maquina_2  != 'nao'):
-                problema_maquina_2 = input("\nComando invalido a maquina funcionou? digite 'sim ou 'nao' :")
+            
 
-                if problema_maquina_2 == 'sim':
-                    print('\nO IFOOD agradece , Boas entregas.. ')
-                    break         
-                if problema_maquina_2 == 'nao':
-                    print('\nDevolva o pedido no estabelecimento e informe o nome do funcionario')
-                    input('\nNome do funcionario: ')
-                    print('\nO IFOOD agradece, Voce recebera o valor da corrida em ate 5 dias uteis, Boas entregas. ')
-                    break
+            if problema_maquina_2 == 'sim':
+                print('\nO IFOOD agradece , Boas entregas.. ')
+                        
+            if problema_maquina_2 == 'nao':
+                print('\nDevolva o pedido no estabelecimento e informe o nome do funcionario')
+                input('\nNome do funcionario: ')
+                print('\nO IFOOD agradece, Você recebera o valor da corrida em ate 5 dias uteis, Boas entregas. ')
+                
+
+
+                
           
-        if opcao == 4:
+        if opcao == 4:           
             menuPrincipal()
+
+            
+
 
 
 # Chamar função principal
