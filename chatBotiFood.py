@@ -3,7 +3,7 @@ print('Olá você esta no chat do ifood')
 
 # Menu pricipal
 opcao = 0
-def menuPrincipal():
+def menuPrincipal(): 
     nome = input('Digite seu nome: ')
     checarNome(nome)
     print('Menu pricipal:')
@@ -177,7 +177,7 @@ def escolhaquatro():
              print("Qual o erro está aparecendo?")
              ErroNaTela = input("Digite o erro: ")
              print("Não se preocupe, vamos trocar a sua máquina")
-             
+
         if opcao == 4:
             escolhazero()
 #Chamar menu das opcoes principais
