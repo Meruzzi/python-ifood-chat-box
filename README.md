@@ -2,7 +2,7 @@
 
 
 ## Chatbox de suporte para entregadores iFood.
-## Plataforma: Python
+## Linguagem: Python
 
 Curso Vamos AI (Resilia Educação e Potência Tech iFood)
 
