@@ -173,7 +173,11 @@ def escolhaquatro():
                     input('\nNome do funcionario: ')
                     print('\nO IFOOD agradece, Voce recebera o valor da corrida em ate 5 dias uteis, Boas entregas. ')
                     break
-          
+        if opcao == 3:
+             print("Qual o erro está aparecendo?")
+             ErroNaTela = input("Digite o erro: ")
+             print("Não se preocupe, vamos trocar a sua máquina")
+             
         if opcao == 4:
             escolhazero()
 #Chamar menu das opcoes principais
