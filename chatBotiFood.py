@@ -13,13 +13,14 @@ def escolhazero():
     if opcao == 1:
         escolhaUm()
     if opcao == 2:
-        escolhadois()
+       escolhadois()
+    if opcao == 3:
+       escolha_tres()  
     if opcao == 4:
         escolhaquatro()
     if opcao == 5:
         print('\nO IFOOD agradece, o contato Boas entregas\n')
-    #elif opcao == 2:
-        #print('Outras opções')
+    
 
 # Verificar se o nome tem entre 3 e 14 caracteres. 
 def checarNome(nome):
@@ -128,6 +129,40 @@ def escolhadois():
         if opcao == 4:
              menuPrincipal()  
 
+def escolha_tres():
+      print('\nPedidos: ')
+
+      opcao = int(input("\n1 - Suspeita de roubo.\n2 - Local com Riscos Ambientais.\n3 - Voltar ao Menu Principal.\n\nOpção:  "))
+    
+      if opcao == 1:
+          opcao = input('\nNos descreva a situação: ')
+          opcao = input('\nHouve algum tipo de agressão?  ')
+          while opcao:
+            if opcao != 'sim' and opcao != 'não':
+                opcao = input("\nComando inválido, houve algum tipo de agressão digite sim/não: ")
+            if (opcao == 'sim'):
+                opcao = print('\nEstamos aqui pra te dar todo o suporte. Nosso time vai entrar em contato com você em breve. O IFOOD agradece o contato e até o proximno contato. ')
+      
+            if(opcao == 'não'):
+                opcao = print('\nEstamos finalizando a corrida. Ficamos felizes que não houve nenhum tipo de agressão,nosso time está pra te dar todo suporte . O IFOOD agradece o contato e ate a proxima! ')
+ 
+      if opcao == 2:
+            opcao = input('\nNos descreva a situção do local: ')
+            opcao = print('\nTire uma foto do local: ')
+            print('\nEstamos finalizando sua corrida. Nosso time esta aqui para de dar  todo o suporte. O IFOOD agradece e até a proxima! ')
+
+      if opcao == 3:
+          opcao_2 = input('\nVoltar ao menu Principal? ')
+          while opcao_2:
+              if opcao_2 != 'sim' and opcao_2 != 'não':
+               opcao_2 = input("\nComando inválido, Voltar ao menu Principal sim/não:  ")
+              if opcao_2 == 'sim' :
+                escolhazero()
+                break
+              if opcao_2 == 'não':
+                print('\nO IFOOD agradece o contato. Até a Próxima!')
+                break
+    
 
                 
 
