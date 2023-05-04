@@ -17,7 +17,7 @@ Douglas Pinheiro
 
 Fernando Casanova
 
-Gabriel Meruziz
+Gabriel Meruzzi
 
 Pamela Carvalho
 
